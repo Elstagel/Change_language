@@ -8,10 +8,10 @@
   Title="MainWindow" Height="300" Width="300" WindowStartupLocation="CenterScreen">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="Language" Click="MenuItem_Click">
-                <MenuItem Header="Russian"/>
-                <MenuItem Header="English"/>
-                <MenuItem Header="France"/>
+            <MenuItem Header="Language">
+                <MenuItem Header="Russian" Click="MenuItem_Click_1"/>
+                <MenuItem Header="English" Click="MenuItem_Click_2"/>
+                <MenuItem Header="France"  Click="MenuItem_Click_3"/>
             </MenuItem>
         </Menu>
         <Grid Margin="5">

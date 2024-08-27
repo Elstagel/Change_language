@@ -56,9 +56,24 @@ namespace Les123
 			SwitchLoc();
 		}
 
-		private void MenuItem_Click(object sender, RoutedEventArgs e)
+
+		private void MenuItem_Click_1(object sender, RoutedEventArgs e)
 		{
-			SwitchLoc();
+			Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ru");
+			UpdateUI();
+
+		}
+
+		private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+		{
+			Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+			UpdateUI();
+
+		}
+
+		private void MenuItem_Click_3(object sender, RoutedEventArgs e)
+		{
+			Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr");
 			UpdateUI();
 
 		}
