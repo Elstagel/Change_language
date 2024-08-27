@@ -55,9 +55,6 @@ namespace Les123
 		{
 			SwitchLoc();
 		}
-		//StringsUI.<culture marker>.resx
-		//ru, en-US, en-UK, en, fr, fr-FR, fr-CA
-		//la voiture le car
-		//i18n l10n
+		
 	}
 }
