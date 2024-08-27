@@ -5,30 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Les123"
         mc:Ignorable="d"
-  Title="MainWindow" Height="250" Width="250" WindowStartupLocation="CenterScreen">
-    <Grid Margin="5">
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition Height="2*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Label x:Name="NameLabel" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right">Name:</Label>
-        <TextBox Grid.Row="0" Grid.Column="1" MinWidth="50" MaxHeight="20"/>
-        <Label x:Name="SurnameLabel" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right">Surname:</Label>
-        <TextBox Grid.Row="1" Grid.Column="1" MinWidth="50" MaxHeight="20"/>
-        <Label x:Name="PhoneLabel" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right">Phone:</Label>
-        <TextBox Grid.Row="2" Grid.Column="2" MinWidth="50" MaxHeight="20"/>
-        <Button x:Name="HelloButton" Grid.Column="0" Grid.Row="3" Margin="5">Hello</Button>
-        <Button x:Name="CancelButton" Grid.Column="1" Grid.Row="3" Margin="5">Cancel</Button>
-        <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2">
-            <Button x:Name="SwitchLocNoUpdateButton" Margin="0, 5" Click="SwitchLocNoUpdateButton_Click">Switch localization and don't update UI</Button>
-            <Button x:Name="SwitchLocUpdateButton" Click="SwitchLocUpdateButton_Click">Switch localization and update all UI</Button>
-        </StackPanel>
-    </Grid>
+  Title="MainWindow" Height="300" Width="300" WindowStartupLocation="CenterScreen">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Language" Click="MenuItem_Click">
+                <MenuItem Header="Russian"/>
+                <MenuItem Header="English"/>
+                <MenuItem Header="France"/>
+            </MenuItem>
+        </Menu>
+        <Grid Margin="5">
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="NameLabel" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right">Name:</Label>
+            <TextBox Grid.Row="0" Grid.Column="1" MinWidth="50" MaxHeight="20"/>
+            <Label x:Name="SurnameLabel" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right">Surname:</Label>
+            <TextBox Grid.Row="1" Grid.Column="1" MinWidth="50" MaxHeight="20"/>
+            <Label x:Name="PhoneLabel" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right">Phone:</Label>
+            <TextBox Grid.Row="2" Grid.Column="2" MinWidth="50" MaxHeight="20"/>
+            <Button x:Name="HelloButton" Grid.Column="0" Grid.Row="3" Margin="5">Hello</Button>
+            <Button x:Name="CancelButton" Grid.Column="1" Grid.Row="3" Margin="5">Cancel</Button>
+            <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2">
+                <Button x:Name="SwitchLocNoUpdateButton" Margin="0, 5" Click="SwitchLocNoUpdateButton_Click">Switch localization and don't update UI</Button>
+                <Button x:Name="SwitchLocUpdateButton" Click="SwitchLocUpdateButton_Click">Switch localization and update all UI</Button>
+            </StackPanel>
+        </Grid>
+
+    </DockPanel>
 </Window>

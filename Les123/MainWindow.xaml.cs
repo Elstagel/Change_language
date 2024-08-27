@@ -55,6 +55,12 @@ namespace Les123
 		{
 			SwitchLoc();
 		}
-		
+
+		private void MenuItem_Click(object sender, RoutedEventArgs e)
+		{
+			SwitchLoc();
+			UpdateUI();
+
+		}
 	}
 }
